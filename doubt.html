@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Doubt Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: #333;
+        }
+        textarea {
+            width: 100%;
+            height: 150px;
+            margin-top: 10px;
+        }
+        button {
+            padding: 10px 15px;
+            margin-top: 10px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1> Doubt</h1>
+    <p>Enter your doubts and thoughts below:</p>
+    
+    <textarea id="doubtInput" placeholder="Share your thoughts here..."></textarea>
+    <br>
+    <button onclick="promptSignIn()">Send Doubt</button>
+
+    <script>
+        function promptSignIn() {
+            const isSignedIn = false; // Change this to true if the user is signed in
+            if (!isSignedIn) {
+                alert('Please sign in to submit your doubt.');
+            } else {
+                sendDoubt();
+            }
+        }
+
+        function sendDoubt() {
+            const doubt = document.getElementById('doubtInput').value;
+            if (doubt) {
+                alert('Your doubt has been sent: ' + doubt);
+                document.getElementById('doubtInput').value = ''; // Clear the input
+            } else {
+                alert('Please enter a doubt before sending.');
+            }
+        }
+    </script>
+</body>
+</html>
