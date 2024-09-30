@@ -4,83 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Education App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-            padding: 0;
-        }
         body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             background-color: #f0f8ff;
         }
         nav {
             background-color: #ba218a;
-            padding: 15px;
-            text-align: center;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
         nav a {
             color: white;
-            margin: 0 20px;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        nav a:hover {
-            text-decoration: underline;
-        }
-        .home-link {
-            font-size: 1.2em; /* Adjust the size as needed */
         }
         .main {
+            min-height: 100vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            min-height: 100vh; /* Makes the main section cover the full viewport height */
+            padding: 40px;
         }
         h1 {
             color: #0056b3;
-            text-align: center;
+            font-size: 2.5em;
         }
         img {
-            display: block;
-            margin: 20px auto;
             border-radius: 10px;
-            max-width: 100%;
+            max-width: 80%;
             height: auto;
         }
-        p {
-            line-height: 1.6;
-            text-align: center; /* Center text for better presentation */
-            max-width: 800px; /* Optional: Limit paragraph width for readability */
-        }
         footer {
-            text-align: center;
-            padding: 20px;
             background-color: #eb138e;
             color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-            margin-top: 20px;
+            padding: 20px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Navigation -->
-    <nav>
-        <a href="#" class="home-link">Home</a>
-        <a href="login.html">Login/Signup</a>
-        <a href="courses.html">Courses</a>
-        <a href="doubt.html">Doubts</a>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">EduApp</a>
+        <div class="collapse navbar-collapse">
+            <div class="navbar-nav">
+                <a class="nav-item nav-link" href="#">Home</a>
+                <a class="nav-item nav-link" href="login.html">Login/Signup</a>
+                <a class="nav-item nav-link" href="courses.html">Courses</a>
+                <a class="nav-item nav-link" href="doubt.html">Doubts</a>
+            </div>
+        </div>
     </nav>
     <hr>
 
-    <!-- Introduction Section -->
-    <div class="main">
+    <div class="container main text-center">
         <h1>Welcome to EduApp</h1>
         <p>Welcome to our premier online learning platform designed to empower individuals on their educational journeys. At EduApp, we believe that knowledge is the key to personal and professional growth. Our mission is to make quality education accessible to everyone, regardless of their background or experience level.</p>
         <hr>
@@ -96,10 +70,12 @@
     </div>
     <hr>
 
-    <!-- Footer -->
-    <footer>
+    <footer class="text-center">
         Designed by Sona College of Technology. Department of ADS
     </footer>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
