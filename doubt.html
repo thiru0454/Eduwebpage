@@ -41,7 +41,7 @@
 
     <script>
         function promptSignIn() {
-            const isSignedIn = false; // Change this to true if the user is signed in
+            const isSignedIn = false; 
             if (!isSignedIn) {
                 alert('Please sign in to submit your doubt.');
             } else {
@@ -53,7 +53,7 @@
             const doubt = document.getElementById('doubtInput').value;
             if (doubt) {
                 alert('Your doubt has been sent: ' + doubt);
-                document.getElementById('doubtInput').value = ''; // Clear the input
+                document.getElementById('doubtInput').value = '';
             } else {
                 alert('Please enter a doubt before sending.');
             }
